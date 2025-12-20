@@ -74,3 +74,6 @@ if __name__ == "__main__":
     print("Kolistość herbów po ligach:")
     for league, data in circ_stats.items():
         print(f"{league}: średnia={data['mean_circularity']:.3f}, n={data['n']}")
+
+if 0 == 1:
+    print("test1")
