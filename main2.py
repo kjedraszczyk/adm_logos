@@ -279,7 +279,7 @@ def plot_circularity_by_league(X, y, save_path=None):
     }
 
     plt.figure(figsize=(12, 8))
-    box_plot = plt.boxplot(data, labels=leagues, patch_artist=True, notch=False, showmeans=True)
+    box_plot = plt.boxplot(data, tick_labels=leagues, patch_artist=True, notch=False, showmeans=True)
 
     # Kolorowanie skrzynek
     for patch, league in zip(box_plot['boxes'], leagues):
@@ -365,5 +365,3 @@ if __name__ == "__main__":
                 print(f"  {name}: {val:.3f}")
     else:
         print("Brak poprawnie wczytanych herbów.")
-
-
